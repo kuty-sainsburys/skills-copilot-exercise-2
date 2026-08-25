@@ -62,7 +62,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
           text-file: octofit-tracker/frontend/src/components/Activities.jsx
-          keyphrase: '-8000.app.github.dev/api/activities'
+          keyphrase: 'api/activities'
           minimum-occurrences: 1
           case-sensitive: false
 
@@ -72,7 +72,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
           text-file: octofit-tracker/frontend/src/components/Leaderboard.jsx
-          keyphrase: '-8000.app.github.dev/api/leaderboard'
+          keyphrase: 'api/leaderboard'
           minimum-occurrences: 1
           case-sensitive: false
 
@@ -82,7 +82,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
           text-file: octofit-tracker/frontend/src/components/Teams.jsx
-          keyphrase: '-8000.app.github.dev/api/teams'
+          keyphrase: 'api/teams'
           minimum-occurrences: 1
           case-sensitive: false
 
@@ -92,7 +92,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
           text-file: octofit-tracker/frontend/src/components/Users.jsx
-          keyphrase: '-8000.app.github.dev/api/users'
+          keyphrase: 'api/users'
           minimum-occurrences: 1
           case-sensitive: false
 
@@ -102,7 +102,7 @@ jobs:
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
           text-file: octofit-tracker/frontend/src/components/Workouts.jsx
-          keyphrase: '-8000.app.github.dev/api/workouts'
+          keyphrase: 'api/workouts'
           minimum-occurrences: 1
           case-sensitive: false
 
