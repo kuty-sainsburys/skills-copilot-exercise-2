@@ -1,4 +1,5 @@
 import express, { type RequestHandler } from 'express'
+import cors from 'cors'
 import mongoose, { type Model } from 'mongoose'
 import { Activity, Leaderboard, Team, User, Workout } from './models.js'
 
@@ -10,6 +11,7 @@ const apiUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
   : `http://localhost:${port}`
 
+app.use(cors())
 app.use(express.json())
 
 const createCrudHandlers = (model: Model<any>): {
