@@ -9,7 +9,7 @@ function Users() {
   useEffect(() => {
     let isMounted = true
 
-    fetch(apiUrl('users'))
+    fetch(apiUrl('api/users'))
       .then((response) => response.json())
       .then((payload) => {
         if (isMounted) {

@@ -9,7 +9,7 @@ function Teams() {
   useEffect(() => {
     let isMounted = true
 
-    fetch(apiUrl('teams'))
+    fetch(apiUrl('api/teams'))
       .then((response) => response.json())
       .then((payload) => {
         if (isMounted) {

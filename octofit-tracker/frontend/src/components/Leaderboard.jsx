@@ -9,7 +9,7 @@ function Leaderboard() {
   useEffect(() => {
     let isMounted = true
 
-    fetch(apiUrl('leaderboard'))
+    fetch(apiUrl('api/leaderboard'))
       .then((response) => response.json())
       .then((payload) => {
         if (isMounted) {

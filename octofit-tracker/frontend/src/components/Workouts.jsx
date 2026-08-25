@@ -9,7 +9,7 @@ function Workouts() {
   useEffect(() => {
     let isMounted = true
 
-    fetch(apiUrl('workouts'))
+    fetch(apiUrl('api/workouts'))
       .then((response) => response.json())
       .then((payload) => {
         if (isMounted) {

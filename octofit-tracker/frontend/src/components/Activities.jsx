@@ -9,7 +9,7 @@ function Activities() {
   useEffect(() => {
     let isMounted = true
 
-    fetch(apiUrl('activities'))
+    fetch(apiUrl('api/activities'))
       .then((response) => response.json())
       .then((payload) => {
         if (isMounted) {
